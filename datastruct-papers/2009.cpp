@@ -57,7 +57,7 @@ public:
     }
 };
 
-int main_() {
+int main_1() {
     ListNode *a = new ListNode(1);
     ListNode *b = new ListNode(2, a);
     ListNode *b1 = new ListNode(3, b);
@@ -69,4 +69,5 @@ int main_() {
     int d = c->NodeGet(head, 8);
 
     std::cout << d << std::endl;
+    return 1;
 }

@@ -21,11 +21,6 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeMinGWFindMake.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
 			"path" : "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake"
 		},
 		{
@@ -822,8 +817,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "C:/Users/wjuuiw/Desktop/programme/CpulsProjects/cmake-build-debug",
-		"source" : "C:/Users/wjuuiw/Desktop/programme/CpulsProjects"
+		"build" : "C:/Users/NfryCreator/Desktop/gate/cplus-projects/cmake-build-debug",
+		"source" : "C:/Users/NfryCreator/Desktop/gate/cplus-projects"
 	},
 	"version" : 
 	{

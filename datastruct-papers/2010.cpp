@@ -3,21 +3,32 @@
 //
 
 /*
- *  （1）答：
- *  通过使用链表，判断结点位置是否存在，如果存在那么输出结点的值并返回1，否则就返回0.
- *  更正：
- *  算法的基本设计思想如下：
- *  1. 实现一个获取链表长度的函数，遍历一次链表，返回该链表的长度
- *  2. 定义一个指针变量p，通过一次for循环，使指针指向对应的结点
- *  3. 通过使用 链表长度 - 结点倒数位置 + 1 得到指针p需要遍历的结点位置
- *  4. 判断该结点是否存在，若存在则打印该结点值返回1，若不存在则返回0。
- *  （2）答：
- *  1. 实现getLength(ListNode *head)函数，传入链表头结点，获取链表长度
- *  2. 定义指针p，ListNode *p = head
- *  3. 使用for(int i=1;i<length-n+1;i++)，使指针p到达对应的结点位置
- *  4. 使用if(p)判断指针p所指向的结点是否存在
+ *  经此一役，终所了解，c++不好轻易获取数组长度，且不轻易能计算出数组长度，down。
  * */
 
 #include <iostream>
+
+
+void printArray(int R[],int length){
+    for(int i=0;i<length;i++) std::cout << R[i] << ',';
+    std::cout << std::endl;
+}
+void Reverse(int R[],int length, int p) {
+    int a[length];
+    int i = 0;
+    for (int j = p; j < length; i++, j++) { // j 指向左移的第一个位置p,并完成将左移第一个位置之后的所有元素依次放入a数组
+        a[i] = R[j];
+    }
+    for (int q = 0; i < length; i++,q++) a[i] = R[q];   // 将R数组的0~p-1个位置的元素依次插入a数组的剩余位置
+    for(int z = 0;z<length;z++) R[z] = a[z];    // 将结果给予数组R
+    printArray(R,length);
+}
+
+
+int main_2() {
+    int b[10] = {1,2,3,4,5,6,7,8,9,10};
+    Reverse(b,10,5);
+    return 1;
+}
 
 
