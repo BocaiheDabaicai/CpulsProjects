@@ -1,3 +1,3 @@
-C:/Users/NfryCreator/Desktop/gate/cplus-projects/cmake-build-debug/CMakeFiles/cplus_projects.dir
-C:/Users/NfryCreator/Desktop/gate/cplus-projects/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/NfryCreator/Desktop/gate/cplus-projects/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/wjuuiw/Desktop/programme/CpulsProjects/cmake-build-debug/CMakeFiles/cplus_projects.dir
+C:/Users/wjuuiw/Desktop/programme/CpulsProjects/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/wjuuiw/Desktop/programme/CpulsProjects/cmake-build-debug/CMakeFiles/rebuild_cache.dir
