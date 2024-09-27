@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/cplus_projects.dir/datastruct-papers/2009.cpp.obj"
   "CMakeFiles/cplus_projects.dir/datastruct-papers/2009.cpp.obj.d"
+  "CMakeFiles/cplus_projects.dir/datastruct-papers/2010.cpp.obj"
+  "CMakeFiles/cplus_projects.dir/datastruct-papers/2010.cpp.obj.d"
+  "CMakeFiles/cplus_projects.dir/datastruct-papers/2011.cpp.obj"
+  "CMakeFiles/cplus_projects.dir/datastruct-papers/2011.cpp.obj.d"
   "CMakeFiles/cplus_projects.dir/main.cpp.obj"
   "CMakeFiles/cplus_projects.dir/main.cpp.obj.d"
   "cplus_projects.exe"
