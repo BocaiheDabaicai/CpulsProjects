@@ -73,6 +73,12 @@ build CMakeFiles/cplus_projects.dir/datastruct-papers/2011.cpp.obj: CXX_COMPILER
   OBJECT_DIR = CMakeFiles\cplus_projects.dir
   OBJECT_FILE_DIR = CMakeFiles\cplus_projects.dir\datastruct-papers
 
+build CMakeFiles/cplus_projects.dir/datastruct-papers/2012.cpp.obj: CXX_COMPILER__cplus_projects_unscanned_Debug C$:/Users/NfryCreator/Desktop/gate/cplus-projects/datastruct-papers/2012.cpp || cmake_object_order_depends_target_cplus_projects
+  DEP_FILE = CMakeFiles\cplus_projects.dir\datastruct-papers\2012.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\cplus_projects.dir
+  OBJECT_FILE_DIR = CMakeFiles\cplus_projects.dir\datastruct-papers
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target cplus_projects
@@ -81,7 +87,7 @@ build CMakeFiles/cplus_projects.dir/datastruct-papers/2011.cpp.obj: CXX_COMPILER
 #############################################
 # Link the executable cplus_projects.exe
 
-build cplus_projects.exe: CXX_EXECUTABLE_LINKER__cplus_projects_Debug CMakeFiles/cplus_projects.dir/main.cpp.obj CMakeFiles/cplus_projects.dir/datastruct-papers/2009.cpp.obj CMakeFiles/cplus_projects.dir/datastruct-papers/2010.cpp.obj CMakeFiles/cplus_projects.dir/datastruct-papers/2011.cpp.obj
+build cplus_projects.exe: CXX_EXECUTABLE_LINKER__cplus_projects_Debug CMakeFiles/cplus_projects.dir/main.cpp.obj CMakeFiles/cplus_projects.dir/datastruct-papers/2009.cpp.obj CMakeFiles/cplus_projects.dir/datastruct-papers/2010.cpp.obj CMakeFiles/cplus_projects.dir/datastruct-papers/2011.cpp.obj CMakeFiles/cplus_projects.dir/datastruct-papers/2012.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\cplus_projects.dir
