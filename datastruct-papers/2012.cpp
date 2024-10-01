@@ -49,7 +49,7 @@ LinkNode search(LinkNode *list1, LinkNode *list2) {
     return -1;
 }
 
-int main() {
+int main_4() {
     LinkNode *list_7 = new LinkNode('g');
     LinkNode *list_6 = new LinkNode('n', list_7);
     LinkNode *list_5 = new LinkNode('i', list_6);
