@@ -8,9 +8,10 @@
 
 #include <iostream>
 
+/*
 int sort(int A[], int L, int R) {
     int mid = A[L];
-    while (L > R) {
+    while (L < R) {
         while (A[R] >= mid && L < R) R--;
         A[L] = A[R];
         while (A[L] <= mid && L < R) L++;
@@ -25,4 +26,4 @@ void quickSort(int A[], int L, int R) {
     int mid = sort(A, L, R);
     sort(A, L, mid - 1);
     sort(A, mid + 1, R);
-}
+}*/
