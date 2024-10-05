@@ -44,7 +44,7 @@ int result(int A[], int L, int R) {
     return count > mid ? data : -1;
 }
 
-int main() {
+int main_5() {
     int a[] = {0, 5, 5, 3, 5, 5, 7, 5};
     int resultData = result(a, 0, 7);
     std::cout << resultData << std::endl;
