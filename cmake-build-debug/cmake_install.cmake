@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/wjuuiw/Desktop/programme/CpulsProjects
+# Install script for directory: C:/Users/NfryCreator/Desktop/gate/cplus-projects
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/wjuuiw/Desktop/programme/CpulsProjects/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/NfryCreator/Desktop/gate/cplus-projects/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

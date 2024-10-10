@@ -1,9 +1,7 @@
 # ninja log v6
 6	386	7490364736489799	CMakeFiles/cplus_projects.dir/main.cpp.obj	35b6ce24b1e5c0ff
-426	514	7491215593179561	cplus_projects.exe	db4e5784db5a51dc
+766	1255	7493869930620916	cplus_projects.exe	c739b375bda08d5a
 6	364	7490365317864918	CMakeFiles/cplus_projects.dir/datastruct-papers/2009.cpp.obj	308cd92753d83292
 5	719	7491214998518787	CMakeFiles/cplus_projects.dir/datastruct-papers/2010.cpp.obj	bbb831fcbf085e2f
-5	426	7491215588971167	CMakeFiles/cplus_projects.dir/datastruct-papers/2011.cpp.obj	cd6441d1d095711a
-22	761	7493869923177737	CMakeFiles/cplus_projects.dir/datastruct-papers/2012.cpp.obj	3dd3633d393444eb
 5	765	7493869923002292	CMakeFiles/cplus_projects.dir/datastruct-papers/2011.cpp.obj	cd6441d1d095711a
-766	1255	7493869930620916	cplus_projects.exe	c739b375bda08d5a
+22	761	7493869923177737	CMakeFiles/cplus_projects.dir/datastruct-papers/2012.cpp.obj	3dd3633d393444eb
