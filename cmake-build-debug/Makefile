@@ -152,6 +152,126 @@ datastruct-papers/2009.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\cplus_projects.dir\build.make CMakeFiles/cplus_projects.dir/datastruct-papers/2009.cpp.s
 .PHONY : datastruct-papers/2009.cpp.s
 
+datastruct-papers/2010.obj: datastruct-papers/2010.cpp.obj
+.PHONY : datastruct-papers/2010.obj
+
+# target to build an object file
+datastruct-papers/2010.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cplus_projects.dir\build.make CMakeFiles/cplus_projects.dir/datastruct-papers/2010.cpp.obj
+.PHONY : datastruct-papers/2010.cpp.obj
+
+datastruct-papers/2010.i: datastruct-papers/2010.cpp.i
+.PHONY : datastruct-papers/2010.i
+
+# target to preprocess a source file
+datastruct-papers/2010.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cplus_projects.dir\build.make CMakeFiles/cplus_projects.dir/datastruct-papers/2010.cpp.i
+.PHONY : datastruct-papers/2010.cpp.i
+
+datastruct-papers/2010.s: datastruct-papers/2010.cpp.s
+.PHONY : datastruct-papers/2010.s
+
+# target to generate assembly for a file
+datastruct-papers/2010.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cplus_projects.dir\build.make CMakeFiles/cplus_projects.dir/datastruct-papers/2010.cpp.s
+.PHONY : datastruct-papers/2010.cpp.s
+
+datastruct-papers/2011.obj: datastruct-papers/2011.cpp.obj
+.PHONY : datastruct-papers/2011.obj
+
+# target to build an object file
+datastruct-papers/2011.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cplus_projects.dir\build.make CMakeFiles/cplus_projects.dir/datastruct-papers/2011.cpp.obj
+.PHONY : datastruct-papers/2011.cpp.obj
+
+datastruct-papers/2011.i: datastruct-papers/2011.cpp.i
+.PHONY : datastruct-papers/2011.i
+
+# target to preprocess a source file
+datastruct-papers/2011.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cplus_projects.dir\build.make CMakeFiles/cplus_projects.dir/datastruct-papers/2011.cpp.i
+.PHONY : datastruct-papers/2011.cpp.i
+
+datastruct-papers/2011.s: datastruct-papers/2011.cpp.s
+.PHONY : datastruct-papers/2011.s
+
+# target to generate assembly for a file
+datastruct-papers/2011.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cplus_projects.dir\build.make CMakeFiles/cplus_projects.dir/datastruct-papers/2011.cpp.s
+.PHONY : datastruct-papers/2011.cpp.s
+
+datastruct-papers/2012.obj: datastruct-papers/2012.cpp.obj
+.PHONY : datastruct-papers/2012.obj
+
+# target to build an object file
+datastruct-papers/2012.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cplus_projects.dir\build.make CMakeFiles/cplus_projects.dir/datastruct-papers/2012.cpp.obj
+.PHONY : datastruct-papers/2012.cpp.obj
+
+datastruct-papers/2012.i: datastruct-papers/2012.cpp.i
+.PHONY : datastruct-papers/2012.i
+
+# target to preprocess a source file
+datastruct-papers/2012.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cplus_projects.dir\build.make CMakeFiles/cplus_projects.dir/datastruct-papers/2012.cpp.i
+.PHONY : datastruct-papers/2012.cpp.i
+
+datastruct-papers/2012.s: datastruct-papers/2012.cpp.s
+.PHONY : datastruct-papers/2012.s
+
+# target to generate assembly for a file
+datastruct-papers/2012.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cplus_projects.dir\build.make CMakeFiles/cplus_projects.dir/datastruct-papers/2012.cpp.s
+.PHONY : datastruct-papers/2012.cpp.s
+
+datastruct-papers/2013.obj: datastruct-papers/2013.cpp.obj
+.PHONY : datastruct-papers/2013.obj
+
+# target to build an object file
+datastruct-papers/2013.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cplus_projects.dir\build.make CMakeFiles/cplus_projects.dir/datastruct-papers/2013.cpp.obj
+.PHONY : datastruct-papers/2013.cpp.obj
+
+datastruct-papers/2013.i: datastruct-papers/2013.cpp.i
+.PHONY : datastruct-papers/2013.i
+
+# target to preprocess a source file
+datastruct-papers/2013.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cplus_projects.dir\build.make CMakeFiles/cplus_projects.dir/datastruct-papers/2013.cpp.i
+.PHONY : datastruct-papers/2013.cpp.i
+
+datastruct-papers/2013.s: datastruct-papers/2013.cpp.s
+.PHONY : datastruct-papers/2013.s
+
+# target to generate assembly for a file
+datastruct-papers/2013.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cplus_projects.dir\build.make CMakeFiles/cplus_projects.dir/datastruct-papers/2013.cpp.s
+.PHONY : datastruct-papers/2013.cpp.s
+
+datastruct-papers/quickSort.obj: datastruct-papers/quickSort.cpp.obj
+.PHONY : datastruct-papers/quickSort.obj
+
+# target to build an object file
+datastruct-papers/quickSort.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cplus_projects.dir\build.make CMakeFiles/cplus_projects.dir/datastruct-papers/quickSort.cpp.obj
+.PHONY : datastruct-papers/quickSort.cpp.obj
+
+datastruct-papers/quickSort.i: datastruct-papers/quickSort.cpp.i
+.PHONY : datastruct-papers/quickSort.i
+
+# target to preprocess a source file
+datastruct-papers/quickSort.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cplus_projects.dir\build.make CMakeFiles/cplus_projects.dir/datastruct-papers/quickSort.cpp.i
+.PHONY : datastruct-papers/quickSort.cpp.i
+
+datastruct-papers/quickSort.s: datastruct-papers/quickSort.cpp.s
+.PHONY : datastruct-papers/quickSort.s
+
+# target to generate assembly for a file
+datastruct-papers/quickSort.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cplus_projects.dir\build.make CMakeFiles/cplus_projects.dir/datastruct-papers/quickSort.cpp.s
+.PHONY : datastruct-papers/quickSort.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -188,6 +308,21 @@ help:
 	@echo ... datastruct-papers/2009.obj
 	@echo ... datastruct-papers/2009.i
 	@echo ... datastruct-papers/2009.s
+	@echo ... datastruct-papers/2010.obj
+	@echo ... datastruct-papers/2010.i
+	@echo ... datastruct-papers/2010.s
+	@echo ... datastruct-papers/2011.obj
+	@echo ... datastruct-papers/2011.i
+	@echo ... datastruct-papers/2011.s
+	@echo ... datastruct-papers/2012.obj
+	@echo ... datastruct-papers/2012.i
+	@echo ... datastruct-papers/2012.s
+	@echo ... datastruct-papers/2013.obj
+	@echo ... datastruct-papers/2013.i
+	@echo ... datastruct-papers/2013.s
+	@echo ... datastruct-papers/quickSort.obj
+	@echo ... datastruct-papers/quickSort.i
+	@echo ... datastruct-papers/quickSort.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

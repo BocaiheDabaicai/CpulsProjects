@@ -8,4 +8,6 @@ add_executable(cplus_projects main.cpp
         datastruct-papers/2010.cpp
         datastruct-papers/2011.cpp
         datastruct-papers/2012.cpp
+        datastruct-papers/quickSort.cpp
+        datastruct-papers/2013.cpp
 )

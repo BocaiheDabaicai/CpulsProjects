@@ -6,7 +6,7 @@
  *  经此一役，终所了解，c++不好轻易获取数组长度，且不轻易能计算出数组长度，down。
  * */
 
-#include <iostream>
+/*#include <iostream>
 
 
 void printArray(int R[],int length){
@@ -29,6 +29,6 @@ int main_2() {
     int b[10] = {1,2,3,4,5,6,7,8,9,10};
     Reverse(b,10,5);
     return 1;
-}
+}*/
 
 
