@@ -57,7 +57,7 @@ int main_1(void) {
 }
 
 // 解答题
-int main() {
+int main_2() {
     // 第一题
     printf("       *\n");
     printf("      * \n");
