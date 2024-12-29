@@ -8,8 +8,8 @@ int main_1(void) {
 
     /*
      * 2.2 第一问
-     * 指令是 include,printf
-     * 语句都是
+     * 指令是 include
+     * 语句是 printf，return
      * */
     printf("Parkinson's Law:\nWork expands so as to ");
     printf("fill the time\n");
@@ -40,17 +40,17 @@ int main_1(void) {
      * 第二问
      *   字符之间的距离太大，不易程序员阅读
      * 第三问
-     *   c语言的关键字有 for,printf,while
+     *   c语言的关键字有 for,while
      * */
 
     /*
      * 2.8
      * 第一问
-     *   记号有=,(),*,-,/,;
+     *   记号有=,(),*,-,/,;,answer,3,q,p,p,3
      * 第二问
-     *   answer = (3 * q – p * p) / 3;
+     *   answer = ( 3 * q – p * p ) / 3 ;
      * 第三问
-     *   联系两个标识符的记号之间的空格必不可少
+     *   如果删除空格会改变原有记号的含义，那么这个空格就是必须的
      * */
 
     return 0;
