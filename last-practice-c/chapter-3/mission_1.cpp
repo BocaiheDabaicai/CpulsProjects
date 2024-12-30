@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int main_2() {
     printf("%6d,%4d\n", 86, 1040); // ----86 1040
     printf("%12.5e\n", 30.253); // ----30.25300
     printf("%.4f\n", 83.162); // 83.1620
