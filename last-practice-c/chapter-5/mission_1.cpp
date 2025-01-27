@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int main_9() {
     /*
      * 5.1
      * 1
