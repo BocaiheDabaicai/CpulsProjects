@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-int main() {
+int main_1() {
     // 1.
     printf("p=%f\n", pow(1 + 0.07, 10));
 
