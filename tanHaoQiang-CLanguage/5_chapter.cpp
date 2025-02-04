@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int main_1() {
     // 第四题
     /*char str;
     int letter = 0, space = 0, digit = 0, other = 0;
