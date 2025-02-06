@@ -20,7 +20,7 @@ void hex_change_dec(char a[]);
 void int_change_string(int a);
 void calc_day(int year,int month,int day);
 
-int main() {
+int main_1() {
     // 第一题
     /*int r = gys(108,96);
     int s = gbs(108,96,r);*/
