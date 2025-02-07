@@ -5,10 +5,17 @@
 void swap(int *p1,int *p2);
 void compare(int a[5][5],int result[5][2],int ref);
 void sort(char str[10][100]);
+
 float definite_integral(float (*p)(float),float a,float b,int n);
 float f_sin(float x);
 float f_cos(float x);
 float f_exp(float x);
+
+void student_average(float *p);
+void student_not_great(float *p);
+void student_great(float *p);
+
+int strcmp_self(char *p1,char *p2);
 
 int main(){
     // 第一题
@@ -184,14 +191,57 @@ int main(){
     printf("exp result is: %f\n",definite_integral(p3,0,2,20));*/
 
     // 第十四题
-    int arr[10];
+    /*int arr[10];
 
     for(int i=9;i>=0;i--)
         scanf("%d",&arr[i]);
 
     for(int i=0;i<10;i++)
-        printf("%d ",arr[i]);
+        printf("%d ",arr[i]);*/
 
+    // 第十五题
+    /*int stu[4][5] = {
+            {56,75,54,66,44},
+            {86,85,84,86,84},
+            {76,75,57,76,74},
+            {56,45,34,96,94},
+    },*p,sum=0,avg;
+
+    for(int i=0;i<4;i++)
+        sum += stu[i][0];
+    avg = sum/4;
+
+    for(int i=0;i<4;i++) {
+        int count = 0;
+        for (int j = 0; j < 5; j++){
+            if(stu[i][j] < 60)count++;
+        }
+        if(count>=2) {
+            printf("%d student has ", i);
+            int temp=0;
+            for(int j=0;j<5;j++) {
+                temp += stu[i][j];
+                printf("%d ", stu[i][j]);
+            }
+            printf(",and avg is %.2f\n",(float)temp/5);
+        }
+    }
+
+    for(int i=0;i<4;i++) {
+        int temp = 0;
+        int count = 0;
+        for (int j = 0; j < 5; j++){
+            temp += stu[i][j];
+            if(stu[i][j] >= 85) count++;
+        }
+        if((float)temp/4 >= 90 || count == 5)
+            printf("%d student is great!!\n",i);
+    }*/
+
+    // 第十七题
+    char str1[50] = {"asjdkjqhwk"},str2[50] = {"asjdkjqhwk"};
+
+    printf("result is %d\n",strcmp_self(str1,str2));
 
     return 1;
 }
@@ -228,6 +278,7 @@ void sort(char str[10][100]){
         }
     }
 }
+
 float definite_integral(float (*p)(float),float a,float b,int n){
     int i;
     float x=a,h=(b-a)/n,s=0;
@@ -246,4 +297,19 @@ float f_cos(float x){
 }
 float f_exp(float x){
     return exp(x);
+}
+
+void student_average(float *p){
+    for(int i=0;i<5;i++);
+}
+void student_not_great(float *p);
+void student_great(float *p);
+
+int strcmp_self(char *p1,char *p2){
+    while(*p1 != '\0' && *p2 != '\0'){
+        if(*p1 != *p2) return *p1-*p2 > 0 ? abs(*p1-*p2) : -abs(*p1-*p2);
+        *p1++;
+        *p2++;
+    }
+    return 0;
 }
