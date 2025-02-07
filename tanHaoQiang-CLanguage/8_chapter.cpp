@@ -1,9 +1,14 @@
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
 
 void swap(int *p1,int *p2);
 void compare(int a[5][5],int result[5][2],int ref);
 void sort(char str[10][100]);
+float definite_integral(float (*p)(float),float a,float b,int n);
+float f_sin(float x);
+float f_cos(float x);
+float f_exp(float x);
 
 int main(){
     // 第一题
@@ -146,7 +151,7 @@ int main(){
     }*/
 
     // 第十一、十二题
-    char str[10][100]={
+    /*char str[10][100]={
             {"asdkjlkwe"},
             {"asdkjlkwg"},
             {"asdkjlkwr"},
@@ -165,7 +170,28 @@ int main(){
         for(int j=0;str[i][j]!='\0';j++)
             printf("%c",str[i][j]);
         printf("\n");
-    }
+    }*/
+
+    // 第十三题
+    /*float (*p1)(float),(*p2)(float),(*p3)(float);
+
+    p1 = f_sin;
+    p2 = f_cos;
+    p3 = f_exp;
+
+    printf("sin result is: %f\n",definite_integral(p1,0,1,20));
+    printf("cos result is: %f\n",definite_integral(p2,-1,1,20));
+    printf("exp result is: %f\n",definite_integral(p3,0,2,20));*/
+
+    // 第十四题
+    int arr[10];
+
+    for(int i=9;i>=0;i--)
+        scanf("%d",&arr[i]);
+
+    for(int i=0;i<10;i++)
+        printf("%d ",arr[i]);
+
 
     return 1;
 }
@@ -201,4 +227,23 @@ void sort(char str[10][100]){
             }
         }
     }
+}
+float definite_integral(float (*p)(float),float a,float b,int n){
+    int i;
+    float x=a,h=(b-a)/n,s=0;
+    for(i=0;i<=n;i++){
+        x += h;
+        s += (*p)(x) * h; // 求切片面积
+    }
+
+    return s;
+}
+float f_sin(float x){
+    return sin(x);
+}
+float f_cos(float x){
+    return cos(x);
+}
+float f_exp(float x){
+    return exp(x);
 }
