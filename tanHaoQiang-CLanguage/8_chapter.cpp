@@ -2,6 +2,9 @@
 #include <string.h>
 #include <math.h>
 
+char newbuf[1000];
+char *newp = newbuf;
+
 void swap(int *p1,int *p2);
 void compare(int a[5][5],int result[5][2],int ref);
 void sort(char str[10][100]);
@@ -16,6 +19,12 @@ void student_not_great(float *p);
 void student_great(float *p);
 
 int strcmp_self(char *p1,char *p2);
+
+char *new_self(int n);
+void free(char *p);
+
+void sort_char(char **p);
+void sort_int(int **p);
 
 int main(){
     // 第一题
@@ -239,9 +248,38 @@ int main(){
     }*/
 
     // 第十七题
-    char str1[50] = {"asjdkjqhwk"},str2[50] = {"asjdkjqhwk"};
+    /*char str1[50] = {"asjdkjqhwk"},str2[50] = {"asjdkjqhwk"};
 
-    printf("result is %d\n",strcmp_self(str1,str2));
+    printf("result is %d\n",strcmp_self(str1,str2));*/
+
+    // 第十九题
+    // down
+
+    // 第二十题
+    /*char **p,*p1[5],str[5][80] = {
+            {"asdqwdds1"},
+            {"asdqwdds3"},
+            {"asdqwdds4"},
+            {"asdqwdds5"},
+            {"asdqwdds2"},
+    };
+
+    for(int i=0;i<5;i++)
+        p1[i] = str[i];
+    p = p1;
+
+    sort_char(p);*/
+
+    // 第二十一题
+    int a[20] = {2,3,5,4,1,7,6,5,8,9,0,13,21,42,32,16,14,19,18,11};
+    int **p,*p1[20];
+
+    for(int i=0;i<20;i++)
+        *(p1+i) = &a[i];
+
+    p = p1;
+
+    sort_int(p);
 
     return 1;
 }
@@ -312,4 +350,48 @@ int strcmp_self(char *p1,char *p2){
         *p2++;
     }
     return 0;
+}
+
+char *new_self(int n){
+    if(newp+n<=newbuf+1000){
+        newp += n;
+        return (newp - n);
+    }else
+        return nullptr;
+}
+void free(char *p){
+    if(p>=newbuf && p<newbuf+1000)
+        newp = p;
+}
+
+void sort_char(char **p){
+    char *temp;
+
+    for(int i=0;i<5;i++){
+        for(int j=i+1;j<5;j++){
+            if(strcmp_self(*(p+i),*(p+j))>0){
+                temp = *(p+i);
+                *(p+i) = *(p+j);
+                *(p+j) = temp;
+            }
+        }
+    }
+
+    for(int i=0;i<5;i++){
+        printf("%s\n",*(p+i));
+    }
+}
+void sort_int(int **p){
+    for(int i=0;i<20;i++){
+        for(int j=i+1;j<20;j++){
+            if(*p[i] > *p[j]){
+                int temp = *p[i];
+                *p[i] = *p[j];
+                *p[j] = temp;
+            }
+        }
+    }
+
+    for(int i=0;i<20;i++)
+        printf("%d ",*p[i]);
 }
