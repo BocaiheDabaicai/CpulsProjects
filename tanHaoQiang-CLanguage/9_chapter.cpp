@@ -24,6 +24,9 @@ LinkNode *delete_LinkNode(LinkNode *head,int n);
 LinkNode create_LinkNode(int data);
 void print_LinkNode(LinkNode *head);
 
+LinkNode *merge_LinkNode(LinkNode *head1,LinkNode* head2);
+LinkNode *delete_LinkNode_same(LinkNode *head1,LinkNode* head2);
+
 int main(){
     // 第一题
     /*Date a  = {2019,6,21};
@@ -89,14 +92,18 @@ int main(){
     print_LinkNode(&head);*/
 
     // 第十题、第十一题
-    LinkNode head1 = {0, nullptr};
+    /*LinkNode head1 = {0, nullptr};
     LinkNode head2 = {0, nullptr};
-    LinkNode p1 = create_LinkNode(1);
+    *//*LinkNode p1 = create_LinkNode(1);
     LinkNode p2 = create_LinkNode(2);
     LinkNode p3 = create_LinkNode(3);
+
     LinkNode p4 = create_LinkNode(4);
     LinkNode p5 = create_LinkNode(5);
     LinkNode p6 = create_LinkNode(6);
+
+    LinkNode p7 = create_LinkNode(7);
+    LinkNode p8 = create_LinkNode(7);
 
     insert_LinkNode(&head1,&p1);
     insert_LinkNode(&head1,&p3);
@@ -106,17 +113,36 @@ int main(){
     insert_LinkNode(&head2,&p4);
     insert_LinkNode(&head2,&p6);
 
+    insert_LinkNode(&head1,&p7);
+    insert_LinkNode(&head2,&p8);*//*
+
+    LinkNode p1 = create_LinkNode(1);
+    LinkNode p2 = create_LinkNode(2);
+    LinkNode p3 = create_LinkNode(3);
+
+    LinkNode p4 = create_LinkNode(3);
+    LinkNode p5 = create_LinkNode(2);
+    LinkNode p6 = create_LinkNode(6);
+
+
+    insert_LinkNode(&head1,&p1);
+    insert_LinkNode(&head1,&p3);
+    insert_LinkNode(&head1,&p5);
+
+    insert_LinkNode(&head2,&p2);
+    insert_LinkNode(&head2,&p4);
+    insert_LinkNode(&head2,&p6);
+
+
     print_LinkNode(&head1);
     print_LinkNode(&head2);
 
-    LinkNode *p_left,*p_right;
-    p_left = &head1;
-    p_right = &head2;
+    // merge_LinkNode(&head1,&head2);
 
-    while(p_left->next != nullptr) p_left = p_left->next;
-    p_left->next = p_right->next;
 
-    print_LinkNode(&head1);
+    delete_LinkNode_same(&head1,&head2);
+
+    print_LinkNode(&head1);*/
 
     return 1;
 }
@@ -201,4 +227,49 @@ void print_LinkNode(LinkNode *head){
     }
 
     printf("\n");
+}
+
+LinkNode *merge_LinkNode(LinkNode *head1,LinkNode* head2){
+    LinkNode *p1,*temp1,*p2,*temp2;
+
+    p1 = temp1 = head1->next;
+    p2 = temp2 = head2->next;
+
+    while(p1->next != nullptr || p2->next != nullptr){
+        if(p1->data <= p2->data){
+            temp1 = temp1->next;
+            p1->next = p2;
+            p1 = temp1;
+        }else{
+            temp2 = temp2->next;
+            p2->next = p1;
+            p2 = temp2;
+        }
+    }
+
+    if(p1->data && p2->data){
+        if(p1->data < p2->data) p1->next = p2;
+        else p2->next = p1;
+    }
+
+
+    return head1;
+
+}
+LinkNode *delete_LinkNode_same(LinkNode *head1,LinkNode* head2){
+    LinkNode *p1,*p2;
+    p1 = head1->next;
+    p2 = head2->next;
+
+    while(p1->next != nullptr && p2->next != nullptr){
+        if(p1->next->data == p2->next->data){
+            LinkNode *temp = p1->next;
+            p1->next = temp->next;
+            temp->next = nullptr;
+        }
+        p1 = p1->next;
+        p2 = p2->next;
+    }
+
+    return head1;
 }
