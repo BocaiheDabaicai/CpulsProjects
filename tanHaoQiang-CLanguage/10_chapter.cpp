@@ -9,7 +9,7 @@ struct Student{
     float average;
 };
 
-int main(){
+int main_1(){
     // 第三题
     /*FILE *fp;
     char str[100];
