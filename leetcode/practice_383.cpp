@@ -3,7 +3,7 @@
 
 bool canConstruct(char* ransomNote, char* magazine);
 
-int main(){
+int main_1(){
     char ransomNote[10] = {"aa"};
     char magazine[10] = {"aba"};
 
