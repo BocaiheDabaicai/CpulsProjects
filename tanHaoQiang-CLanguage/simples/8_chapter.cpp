@@ -13,7 +13,7 @@ float *search_student(float (*pointer)[4],int n);
 void sort_string(char *name[],int n);
 void check_student(int *array);
 
-int main(){
+int main_(){
     // 8.1
     /*int data = 100;
     int *p = &data;
