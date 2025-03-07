@@ -57,7 +57,7 @@ void print_Student_score_average(Student_score_average stu);
 struct Student_score_node *creat();
 void print_Student_score_node(Student_score_node *p_node1);
 
-int main(){
+int main_1(){
     // 9.1
     Student a = {2001,"Bruce",'M',"Los Angles"};
     printf("%d %s %c %s\n",a.num,a.name,a.sex,a.address);
