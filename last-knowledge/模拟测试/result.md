@@ -6,7 +6,11 @@
 
 结果：1，0
 
-
+> a = 10 | 1 = 1010 | 0001 = 1011 = 11
+> 
+> b = 10 & -1 = 1010 & 1111 = 1010 = 10
+> 
+> 11,10
 
 2.
 
@@ -14,7 +18,7 @@
 
 结果：5
 
-
+> 12345
 
 3.
 
@@ -22,15 +26,13 @@
 
 结果：789
 
-
-
 4.
 
 ![](C:\Users\NfryCreator\AppData\Roaming\marktext\images\2025-03-09-15-31-51-image.png)
 
 结果：500
 
-
+> int k = N$\times$N$\times$5 = M+M * M+M * 5 = 5 + 5 * 5 + 5 * 5 =  55
 
 5.
 
@@ -38,15 +40,17 @@
 
 结果：a=0 b=0
 
-
+> a = -1 b = 0
+> 
+> a 先判断再减1，到0的时候不再进入循环，之后退出来再减1
+> 
+> b 先减1再判断，到1的时候，先减1，变为0之后判断再退出来
 
 6.
 
 ![](C:\Users\NfryCreator\AppData\Roaming\marktext\images\2025-03-09-15-34-01-image.png)
 
 结果：x:1 y:6
-
-
 
 ## 编程题
 
@@ -63,8 +67,6 @@ void five_student(int n){
 }
 ```
 
-
-
 2.
 
 ![](C:\Users\NfryCreator\AppData\Roaming\marktext\images\2025-03-09-15-38-48-image.png)
@@ -73,11 +75,39 @@ void five_student(int n){
 
 ```c
 void Split(unsigner short a, unsigned short *p0dd,unsigned short *pEven){
-    
+
 }
 ```
 
+> 灵活使用atoi,itoa函数
 
+更正：
+
+```c
+void Split(unsigned short a, unsigned short *p0dd, unsigned short *pEven) {
+    char string[200],odd[100],even[100];
+    int odd_count = 0,even_count = 0;
+
+    itoa(a,string,10);
+    // printf("%s\n",string);
+
+    for(int i=0;string[i] != '\0';i++){
+        if(i%2 == 0){
+            odd[odd_count] = string[i];
+            odd_count++;
+        }else{
+            even[even_count] = string[i];
+            even_count++;
+        }
+    }
+
+    odd[odd_count+1] = '\0';
+    even[even_count+1] = '\0';
+
+    *p0dd = atoi(odd);
+    *pEven = atoi(even);
+}
+```
 
 3.
 
@@ -88,7 +118,7 @@ void Split(unsigner short a, unsigned short *p0dd,unsigned short *pEven){
 ```c
 void result(char jia[],int n){
     char yi[3] = {'x','y','z'},
-    
+
     for(int i=0;i<n;i++){
         for(int j=0;j<n;j++){
             if(jia[i] = 'a' && yi[j] != 'x') printf("a = %c\n",yi[j]);
@@ -101,7 +131,22 @@ void result(char jia[],int n){
 }
 ```
 
+更正：
 
+```c
+void result(){
+    char x,y,z;
+
+    for(x='a';x<='c';x++)
+        for(y='a';y<='c';y++)
+            for(z='a';z<='c';z++)
+                if(x != y && x != z && y != z && x != 'a' && x != 'c' && z != 'c'){
+                    printf("x -> %c\n",x);
+                    printf("y -> %c\n",y);
+                    printf("z -> %c\n",z);
+                }
+}
+```
 
 4.
 
@@ -116,14 +161,13 @@ void result(){
     scanf("%s",str);
     scanf("%d",&n);
 
-    for(int i=0;i<n;i++){
-        printf("%c",str[0]);
-        str = str << 1;
-    }
+    for(int i=n;i<100;i++)
+        printf("%c",str[i]);
+    for(int i=0;i<n;i++)
+        printf("%c",str[i]);
+
 }
 ```
-
-
 
 5.
 
@@ -135,7 +179,7 @@ void result(){
 void result(){
     int data1=1,data2=2,data3;
     int n=10;
-    
+
     printf("%d\n",data1);
     printf("%d %d\n",data1,data2);
 
@@ -144,10 +188,34 @@ void result(){
         if(i%2 != 0) printf("")
     }
 }
-
 ```
 
+> 杨辉三角主要是用数组来实现的
 
+更正：
+
+```c
+void result_1(){
+    int a[10][10];
+
+    a[0][0] = 1;
+    a[1][0] = a[1][1] = 1;
+
+    for(int i=2;i<10;i++){
+        for(int j=0;j<i;j++){
+            if(j == 0 || j == i-1) a[i][j] = 1;
+            else a[i][j] = a[i-1][j-1] + a[i-1][j];
+        }
+    }
+
+    for(int i=0;i<10;i++) {
+        for (int j = 0; j < i; j++)
+            printf("%d ", a[i][j]);
+        printf("\n");
+    }
+
+}
+```
 
 6.
 
@@ -173,8 +241,6 @@ void result(int arr[],int n,int length){
 }
 ```
 
-
-
 7.
 
 ![](C:\Users\NfryCreator\AppData\Roaming\marktext\images\2025-03-09-16-11-55-image.png)
@@ -183,11 +249,58 @@ void result(int arr[],int n,int length){
 
 ```c
 void result(){
-    
+
 }
 ```
 
+更正：
 
+```c
+int eight_queen_check(int row, int col) {
+
+    for (int i = 0; i < 8; i++)if (chess[i][col] == 1) return 0;
+    for (int i = row, j = col; i >= 0 && j >= 0; i--, j--) if (chess[i][j] == 1) return 0;
+    for (int i = row, j = col; i >= 0 && j < 8; i--, j++) if (chess[i][j] == 1) return 0;
+
+    return 1;
+}
+
+void eight_queen_print() {
+    printf("The %d method of eight queen\n", sum + 1);
+    for (int i = 0; i < 8; i++) {
+        for (int j = 0; j < 8; j++) {
+            if (chess[i][j] == 1) printf("Q ");
+            else printf("# ");
+        }
+        printf("\n");
+    }
+    printf("\n");
+}
+
+void eight_queen_search(int row) {
+    if (row == 8) {
+        eight_queen_print();
+        sum++;
+        return;
+    }
+
+    for (int col = 0; col < 8; col++) {
+        if (eight_queen_check(row, col)) {
+            chess[row][col] = 1;
+            eight_queen_search(row + 1);
+            chess[row][col] = 0;
+        }
+    }
+}
+
+int main() {
+
+    eight_queen_search(0);
+    printf("Total is: %d\n",sum);
+
+    return 0;
+}
+```
 
 ## 专业综合
 
@@ -197,7 +310,7 @@ void result(){
 
 答：
 
-
+> 改用Focal Loss 或 加权交叉熵损失
 
 2.
 
@@ -205,7 +318,11 @@ void result(){
 
 答：
 
-
+> 1. 学习率过高，使用学习率衰减
+> 
+> 2. 小批量数据噪声，增大batch size
+> 
+> 3. 模型过拟合，增加Dropout层
 
 3.
 
@@ -213,7 +330,11 @@ void result(){
 
 答：
 
-
+> 1. 数据增强，随即裁剪+Mixup
+> 
+> 2. 模型改进，引入注意力机制模块
+> 
+> 3. 超参数，网格搜索学习率/权重衰减组合
 
 4.
 
@@ -227,8 +348,6 @@ void result(){
 
 所以，总的来说，我的看法是技术创新与社会责任之间的平衡，应该是在社会责任的制约下去取得技术创新，同时再由技术创新来规范化社会责任。
 
-
-
 5.
 
 ![](C:\Users\NfryCreator\AppData\Roaming\marktext\images\2025-03-09-16-25-40-image.png)
@@ -239,15 +358,11 @@ void result(){
 
 在方法上，深度学习的方法有Kreas、LightGBM等等
 
-
-
 6.
 
 ![](C:\Users\NfryCreator\AppData\Roaming\marktext\images\2025-03-09-16-47-04-image.png)
 
 答：
-
-
 
 7.
 
@@ -255,23 +370,17 @@ void result(){
 
 答：
 
-
-
 8.
 
 ![](C:\Users\NfryCreator\AppData\Roaming\marktext\images\2025-03-09-16-47-46-image.png)
 
 答：
 
-
-
 9.
 
 ![](C:\Users\NfryCreator\AppData\Roaming\marktext\images\2025-03-09-16-48-18-image.png)
 
 答：
-
-
 
 ## 翻译题
 
@@ -285,6 +394,4 @@ void result(){
 
 随着深度学习的出现，计算神经网络（CNNS）带来了一个优秀的途径。CNNS被设计用于自动化学习复杂的结构，从图像的层级、层级池和连接层上。这些年之后，研究者已经不断地提升了CNN的架构。例如，阿利克斯网络，首个成功的巨大规模型的计算神经网络，证明了深度神经网络在图像定义上的力量。随后，越来越多先进的架构，像VGGNet,ResNet和“认知”被推出。特别是ResNet，介绍了连接的概念，这具有重大意义地消除了消灭线性地问题在训练，使许多更深入的神经网络发挥作用。
 
-最近
-
-
+最近，大众焦点转换到了朝着探索计算神经网络处理更多复杂任务的方向出发，例如检测现实概念中的对象，自动驾驶的Se和使用下一代网络的图像。随着可利用图像数据的数量继续潜在的成长，并且图像处理单元的计算力量变得更重要，基于计算机视觉技术的深度学习潜力似乎是无穷无尽的。然而，挑战仍然很多，例如处理确定领域里的有限数据和确保模型的可预测性，尤其是安全性验证应用。

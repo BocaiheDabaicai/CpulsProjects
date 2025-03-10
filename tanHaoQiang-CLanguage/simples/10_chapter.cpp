@@ -11,7 +11,7 @@ struct Student_type{
 
 void save(Student_type student[]);
 
-int main(){
+int main_1(){
     // 10.1
     /*FILE *fp;
     char ch,filename[100] = {"./tanHaoQiang-CLanguage/simples/10_chapter_simples/simple_1.txt"};
